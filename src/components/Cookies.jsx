@@ -57,7 +57,7 @@ export default function Cookies() {
     });
   }
   const upgradeCost1 = Math.round(15 * Math.pow(1.15, Upgrade));
-  function buyUpgrade(e) {
+  function buyUpgrade() {
     setCps((x) => Math.round((x + 0.1) * 10) / 10);
     setUpgrade((x) => x + 1);
     setCookies((x) => Math.round((x - upgradeCost1) * 10) / 10);
@@ -67,7 +67,7 @@ export default function Cookies() {
   }
 
   const upgradeCost2 = Math.round(100 * Math.pow(1.15, Upgrade2));
-  function buyUpgrade2(e) {
+  function buyUpgrade2() {
     setCps((x) => Math.round((x + 1) * 10) / 10);
     setUpgrade2((x) => x + 1);
     setCookies((x) => Math.round((x - upgradeCost2) * 10) / 10);
@@ -76,7 +76,7 @@ export default function Cookies() {
     //setTimeout(() => e.target.toggleAttribute("disabled"), 1000);
   }
   const upgradeCost3 = Math.round(1100 * Math.pow(1.15, Upgrade3));
-  function buyUpgrade3(e) {
+  function buyUpgrade3() {
     setCps((x) => Math.round((x + 8) * 10) / 10);
     setUpgrade3((x) => x + 1);
     setCookies((x) => Math.round((x - upgradeCost3) * 10) / 10);
@@ -85,7 +85,7 @@ export default function Cookies() {
     //setTimeout(() => e.target.toggleAttribute("disabled"), 1000);
   }
   const upgradeCost4 = Math.round(12000 * Math.pow(1.15, Upgrade4));
-  function buyUpgrade4(e) {
+  function buyUpgrade4() {
     setCps((x) => Math.round((x + 47) * 10) / 10);
     setUpgrade4((x) => x + 1);
     setCookies((x) => Math.round((x - upgradeCost4) * 10) / 10);
@@ -94,7 +94,7 @@ export default function Cookies() {
     //setTimeout(() => e.target.toggleAttribute("disabled"), 1000);
   }
   const upgradeCost5 = Math.round(130000 * Math.pow(1.15, Upgrade5));
-  function buyUpgrade5(e) {
+  function buyUpgrade5() {
     setCps((x) => Math.round((x + 260) * 10) / 10);
     setUpgrade5((x) => x + 1);
     setCookies((x) => Math.round((x - upgradeCost5) * 10) / 10);
