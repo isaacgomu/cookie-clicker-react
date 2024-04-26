@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-
+import jaffaCake from "/jaffaCake.png";
 export default function Cookies() {
   const [cookies, setCookies] = useState(() => {
     return JSON.parse(localStorage.getItem("cookies")) || 0;
@@ -151,11 +151,7 @@ export default function Cookies() {
         <p>{cps} Jaffas per second</p>
       </div>
       <div id="jaffa">
-        <img
-          id="jaffaButton"
-          src="../src/assets/jaffa-cake.png"
-          onClick={addCookie}
-        />
+        <img id="jaffaButton" src={jaffaCake} onClick={addCookie} />
       </div>
       <div id="buttonsnstats">
         <div id="buttons">
